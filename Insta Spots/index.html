@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Insta Spots</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/0f7c3f0d77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="page-wrapper">
+      <header>
+         <div class="logo">
+            <img src="./assets/images/Logo.svg" alt="Insta Spot logo">
+         </div>
+         <div class="profile">
+            <div class="profile-main-content">
+               <div class="avatar">
+                  <img src="./assets/images/profile.png" alt="profile pic">
+               </div>
+               <div class="text-info">
+                  <div class="profile-heading">
+                     <h1>Chidera Ejimofor</h1>
+                     <p>Insert Bio</p>
+                  </div>
+                  <button id="editProfileBtn"> <i class="fa-solid fa-pen"></i> Edit Profile</button>
+               </div>
+            </div>
+            <button id="newPostBtn"><i class="fa-solid fa-plus"></i> &nbsp; New Post</button>
+         </div>
+      </header>
+      <main id="cardsContainer">
+         <div class="card">
+            <a href="#fake">
+               <img src="./assets/images/val-thorens.png" alt="val Thorens">
+            </a>
+            <div>
+               <p><a href="#fake">Val Thorens</a></p>
+               <i class="fa-regular fa-heart"></i>
+            </div>
+         </div>
+         <div class="card">
+            <a href="#fake">
+               <img src="./assets/images/terrace.png" alt="restaurant terrace">
+            </a>
+            <div>
+               <p><a href="#fake">Restaurant Terrace</a></p>
+               <i class="fa-regular fa-heart"></i>
+            </div>
+         </div>
+         <div class="card">
+            <a href="#fake">
+               <img src="./assets/images/restaurant.png" alt="public restaurant">
+            </a>
+            <div>
+               <p><a href="#fake">An outdoor cafe</a></p>
+               <i class="fa-regular fa-heart"></i>
+            </div>
+         </div>
+         <div class="card">
+            <a href="#fake">
+               <img src="./assets/images/bridge.png" alt="long bridge">
+            </a>
+            <div>
+               <p><a href="#fake">Long bridge, over the forest</a></p>
+               <i class="fa-regular fa-heart"></i>
+            </div>
+         </div>
+         <div class="card">
+            <a href="#fake">
+               <img src="./assets/images/tunnel.png" alt="sunlit tunnel">
+            </a>
+            <div>
+               <p><a href="#fake">Sunlit Tunnel</a></p>
+               <i class="fa-regular fa-heart"></i>
+            </div>
+         </div>
+         <div class="card">
+            <a href="#fake">
+               <img src="./assets/images/mountain-house.png" alt="a house on a mountain">
+            </a>
+            <div>
+               <p><a href="#fake">Mountain house</a></p>
+               <i class="fa-regular fa-heart"></i>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <p>2025 &copy; Spots</p>
+      </footer>
+
+      <div class="modal" id="modal">
+         <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2>Create New Post</h2>
+            <input type="text" id="captionInput" placeholder="Write a caption..." />
+            <input type="file" id="imageInput" accept="image/*" />
+            <img class="preview" id="imagePreview" style="display: none;" />
+            <button id="addPostBtn">Add Post</button>
+         </div>
+      </div>
+      <!-- Modal for editing profile -->
+      <div class="modal" id="editProfileModal">
+         <div class="modal-content">
+            <button class="close-btn" id="closeEditProfile">X</button>
+            <h2>Edit Profile</h2>
+            <input type="text" id="profileNameInput" placeholder="Enter your name">
+            <input type="text" id="profileBioInput" placeholder="Enter your bio">
+            <input type="file" id="profileImageInput">
+            <button id="saveProfileBtn">Save</button>
+         </div>
+      </div>
+ 
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
